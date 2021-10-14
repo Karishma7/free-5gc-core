@@ -31,7 +31,7 @@ ausf-operator natapp-operator nssf-operator smf-operator udr-operator webui-oper
 for charm_directory in $charms; do
     echo "Building charm $charm_directory..."
     cd $charm_directory
-    sudo charmcraft pack
+    charmcraft pack
     cd ..
 done
 
