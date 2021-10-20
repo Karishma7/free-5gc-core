@@ -23,41 +23,43 @@ description: 5g Core Bundle
 bundle: kubernetes
 applications:
   mongodb:
-    charm: "cs:~tataelxsi-charmers/mongodb"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/natapp_ubuntu-20.04-amd64.charm"
     scale: 1
-  nrf:
-    charm: "cs:~tataelxsi-charmers/nrf"
+  nrf: 
+    charm: "http://18.221.164.72:6081/repository/5g/charms/nrf_ubuntu-20.04-amd64.charm"
     scale: 1
   amf:
-    charm: "cs:~tataelxsi-charmers/amf"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/amf_ubuntu-20.04-amd64.charm"
     scale: 1
   ausf:
-    charm: "cs:~tataelxsi-charmers/ausf"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/ausf_ubuntu-20.04-amd64.charm"
     scale: 1
   nssf:
-    charm: "cs:~tataelxsi-charmers/nssf"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/nssf_ubuntu-20.04-amd64.charm"
     scale: 1
   udm:
-    charm: "cs:~tataelxsi-charmers/udm"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/udm_ubuntu-20.04-amd64.charm"
     scale: 1
   udr:
-    charm: "cs:~tataelxsi-charmers/udr"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/udr_ubuntu-20.04-amd64.charm"
     scale: 1
   pcf:
-    charm: "cs:~tataelxsi-charmers/pcf"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/pcf_ubuntu-20.04-amd64.charm"
     scale: 1
   upf1:
-    charm: "cs:~tataelxsi-charmers/upf1"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/upf1_ubuntu-20.04-amd64.charm"
     scale: 1
   webui:
-    charm: "cs:~tataelxsi-charmers/webui"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/webui_ubuntu-20.04-amd64.charm"
     scale: 1
   smf:
-    charm: "cs:~tataelxsi-charmers/smf"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/smf_ubuntu-20.04-amd64.charm"
     scale: 1
   natapp:
-    charm: "cs:~tataelxsi-charmers/natapp"
+    charm: "http://18.221.164.72:6081/repository/5g/charms/natapp_ubuntu-20.04-amd64.charm"
     scale: 1
+    resources:
+        image: "http://18.221.164.72:6083/repository/osm/free5gc-natapp:1.0"
 
 relations:
   - - nrf:mongodb
