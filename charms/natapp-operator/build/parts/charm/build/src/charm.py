@@ -47,6 +47,8 @@ class NatappCharm(CharmBase):
 
         self.image = OCIImageResource(self, "image")
 
+        #self.image=config["image"]
+
         # Registering regular events
         self.framework.observe(self.on.config_changed, self.configure_pod)
 
@@ -84,6 +86,7 @@ class NatappCharm(CharmBase):
             return
 
         self.unit.status = MaintenanceStatus("Assembling pod spec")
+        #image_info=self.image
 
         # Fetch image information
         try:

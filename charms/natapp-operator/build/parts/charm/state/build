@@ -1,9 +1,9 @@
 assets:
   build-packages:
   - git
+  - python3-pip
   - python3-wheel
   - python3-setuptools
-  - python3-pip
   build-snaps: []
   installed-packages:
   - adduser=3.118ubuntu2
@@ -233,11 +233,11 @@ assets:
   - xz-utils=5.2.4-1
   - zlib1g=1:1.2.11.dfsg-2ubuntu1
   installed-snaps:
-  - charmcraft=x2
-  - core20=1081
-  - snapd=13170
-  uname: 'Linux 5.11.0-1019-aws #20~20.04.1-Ubuntu SMP Tue Sep 21 10:40:39 UTC 2021
-    x86_64 x86_64 x86_64 GNU/Linux'
+  - charmcraft=x19
+  - core20=1169
+  - snapd=13270
+  uname: 'Linux 5.4.0-1045-aws #47-Ubuntu SMP Tue Apr 13 07:02:25 UTC 2021 x86_64
+    x86_64 x86_64 GNU/Linux'
 directories: !!set {}
 files: !!set {}
 part-properties:

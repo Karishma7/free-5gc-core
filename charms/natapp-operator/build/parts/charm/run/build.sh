@@ -16,4 +16,4 @@ export CHARMCRAFT_PRIME="/root/project/build/prime"
 ## User Environment
 
 set -x
-env -i LANG=C.UTF-8 LC_ALL=C.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin SNAP=/snap/charmcraft/x7 SNAP_ARCH=amd64 SNAP_NAME=charmcraft SNAP_VERSION=1.2.1 /snap/charmcraft/x7/bin/python3 -I /snap/charmcraft/x7/lib/charmcraft/charm_builder.py --charmdir /root/project/build/parts/charm/build --builddir /root/project/build/parts/charm/install --entrypoint /root/project/build/parts/charm/build/src/charm.py -r requirements.txt
+env -i LANG=C.UTF-8 LC_ALL=C.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin SNAP=/snap/charmcraft/x35 SNAP_ARCH=amd64 SNAP_NAME=charmcraft SNAP_VERSION=1.2.1 /snap/charmcraft/x35/bin/python3 -I /snap/charmcraft/x35/lib/charmcraft/charm_builder.py --charmdir /root/project/build/parts/charm/build --builddir /root/project/build/parts/charm/install --entrypoint /root/project/build/parts/charm/build/src/charm.py -r requirements.txt

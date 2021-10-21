@@ -2,9 +2,10 @@ dependency-paths: !!set {}
 directories: !!set
   hooks: null
   src: null
+  src/__pycache__: null
   venv: null
   venv/IPy-1.1.dist-info: null
-  venv/PyYAML-5.4.1.dist-info: null
+  venv/PyYAML-6.0.dist-info: null
   venv/__pycache__: null
   venv/_yaml: null
   venv/_yaml/__pycache__: null
@@ -28,7 +29,6 @@ files: !!set
   hooks/start: null
   hooks/upgrade-charm: null
   metadata.yaml: null
-  src/.pod_spec.py.swp: null
   src/charm.py: null
   src/pod_spec.py: null
   venv/IPy-1.1.dist-info/AUTHORS: null
@@ -39,12 +39,12 @@ files: !!set
   venv/IPy-1.1.dist-info/WHEEL: null
   venv/IPy-1.1.dist-info/top_level.txt: null
   venv/IPy.py: null
-  venv/PyYAML-5.4.1.dist-info/INSTALLER: null
-  venv/PyYAML-5.4.1.dist-info/LICENSE: null
-  venv/PyYAML-5.4.1.dist-info/METADATA: null
-  venv/PyYAML-5.4.1.dist-info/RECORD: null
-  venv/PyYAML-5.4.1.dist-info/WHEEL: null
-  venv/PyYAML-5.4.1.dist-info/top_level.txt: null
+  venv/PyYAML-6.0.dist-info/INSTALLER: null
+  venv/PyYAML-6.0.dist-info/LICENSE: null
+  venv/PyYAML-6.0.dist-info/METADATA: null
+  venv/PyYAML-6.0.dist-info/RECORD: null
+  venv/PyYAML-6.0.dist-info/WHEEL: null
+  venv/PyYAML-6.0.dist-info/top_level.txt: null
   venv/__pycache__/IPy.cpython-38.pyc: null
   venv/__pycache__/oci_image.cpython-38.pyc: null
   venv/_yaml/__init__.py: null

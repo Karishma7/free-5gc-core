@@ -69,7 +69,33 @@ def _make_pod_custom_resource_definitions():
                     "singular": "network-attachment-definition",
                     "plural": "network-attachment-definitions",
                 },
-                "versions": [{"name": "v1", "served": True, "storage": True}],
+
+             "versions": [
+                {
+                    "name": "v1",
+                    "schema": {
+                        "openAPIV3Schema": {
+                            "description": "NetworkAttachmentDefinition is a CRD schema specified by the Network Plumbing Working Group to express the intent for attaching pods to one or more logical or physical networks. More information available at: https://github.com/k8snetworkplumbingwg/multi-net-spec",
+                            "properties": {
+                                "spec": {
+                                    "description": "NetworkAttachmentDefinition spec defines the desired state of a network attachment",
+                                    "properties": {
+                                        "config": {
+                                            "description": "NetworkAttachmentDefinition config is a JSON-formatted CNI configuration",
+                                            "type": "string"
+                                                }
+                                            },
+                                    "type": "object"
+                                        }
+                                    },
+                            "type": "object"
+                                }
+                            },
+                "served": True,
+                "storage": True
+                }   
+            ]   
+
             },
         }
     ]
@@ -88,7 +114,7 @@ def _make_pod_custom_resources(config: Dict[str, Any]):
         "cniVersion": "0.3.1",
         "name": "n6-network",
         "type": "macvlan",
-        "master": "ens5",
+        "master": config["master_interface"],
         "mode": "bridge",
         "ipam": ipam_body,
     }

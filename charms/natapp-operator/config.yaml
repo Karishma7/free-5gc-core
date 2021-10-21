@@ -53,4 +53,9 @@ options:
     type: string
     description: |
       master interface name for multus config
-    default: "ens3"
+    default: "ens5"
+    #image:
+    #   type: string
+    #   default: http://18.221.164.72:6083/repository/5gdocker/free5gc-natapp:1.0
+    #   description: The docker imag
+

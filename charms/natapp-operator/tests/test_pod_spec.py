@@ -24,7 +24,7 @@ from typing import NoReturn
 import unittest
 import json
 
-from src import pod_spec
+import pod_spec
 
 
 class TestPodSpec(unittest.TestCase):
