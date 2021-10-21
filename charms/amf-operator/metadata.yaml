@@ -41,7 +41,7 @@ resources:
   image:
     type: oci-image
     description: docker image for AMF
-    upstream-source: localhost:32000/free5gc-amf
+    upstream-source: 18.221.164.72:6083/repository/5gdocker/free5gc-amf:1.0
 requires:
   nrf:
     interface: nrf

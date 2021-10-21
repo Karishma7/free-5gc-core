@@ -41,7 +41,7 @@ resources:
   image:
     type: oci-image
     description: docker image for UDR
-    upstream-source: localhost:32000/free5gc-udr:1.0
+    upstream-source: 18.221.164.72:6083/repository/5gdocker/free5gc-udr:1.0
 requires:
   mongodb:
     interface: mongodb
