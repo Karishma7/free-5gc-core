@@ -1,0 +1,19 @@
+vnfd:
+  description: VNFD for 5G Core
+  df:
+  - id: default-df
+  ext-cpd:
+  - id: mgmt-ext
+    k8s-cluster-net: mgmtnet
+  id: core1_vnfd
+  k8s-cluster:
+    nets:
+    - id: mgmtnet
+  kdu:
+  - name: core-kdu
+    juju-bundle: cs:~tataelxsi-charmers/core-5g
+  mgmt-cp: mgmt-ext
+  product-name: core1_vnfd
+  provider: TATA ELXSI
+  version: '1.0'
+

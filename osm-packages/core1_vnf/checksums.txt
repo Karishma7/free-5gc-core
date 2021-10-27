@@ -1,0 +1,3 @@
+90fb45cd2b4272713c37ad3fdf4531a7	core1_vnf/README.md
+b41d0ff646c02d698018546a3a621589	core1_vnf/core1_vnfd.yaml
+3a4799d01502c86f56b0412dc33cf647	core1_vnf/cloud_init/cloud-config.txt
